@@ -7,10 +7,9 @@
 ```
 .
 ├── README.md
-├── elysia-parent
-├──── elysia-common
-├──── elysia-config
-├──── elysia-gateway
+├── elysia-market-parent
+├──── elysia-market-config
+├──── elysia-market-gateway
 ├──── elysia-market-api
 ├──── elysia-market-order
 ├──── elysia-market-stock
