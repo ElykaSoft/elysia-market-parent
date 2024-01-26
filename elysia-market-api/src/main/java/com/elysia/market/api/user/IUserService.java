@@ -3,7 +3,6 @@ package com.elysia.market.api.user;
 import com.elysia.common.pojo.common.Result;
 import com.elysia.common.pojo.dao.ElysiaUser;
 import com.elysia.common.pojo.dao.ElysiaUserInfo;
-import org.springframework.boot.autoconfigure.security.SecurityProperties;
 
 /**
  * @BelongsProject: Elysia

@@ -1,5 +1,9 @@
 package com.elysia.market.api.user;
 
+import com.elysia.common.pojo.dao.ElysiaRole;
+
+import java.util.List;
+
 /**
  * @BelongsProject: elysia-market-parent
  * @BelongsPackage: com.elysia.market.api.user
@@ -9,5 +13,32 @@ package com.elysia.market.api.user;
  * @Version: 1.0
  */
 public interface IUserRoleService {
+    /**
+     * @description: 添加用户角色
+     * @author: ElysiaKafka
+     * @date: 2024/1/26 23:16
+     * @param: userId
+     * @param: roleIds
+     * @return: int
+     **/
+    int authUserRoles(String userId, String[] roleIds);
 
+    /**
+     * @description: 删除用户角色
+     * @author: ElysiaKafka
+     * @date: 2024/1/26 23:16
+     * @param: userId
+     * @param: roleIds
+     * @return: int
+     **/
+    int unAuthUserRoles(String userId, String[] roleIds);
+
+    /**
+     * @description: 查询用户角色
+     * @author: ElysiaKafka
+     * @date: 2024/1/26 23:19
+     * @param: userId
+     * @return: java.util.List<com.elysia.common.pojo.dao.ElysiaRole>
+     **/
+    List<ElysiaRole> queryUserRoles(String userId);
 }
