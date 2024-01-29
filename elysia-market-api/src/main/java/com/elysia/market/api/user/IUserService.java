@@ -21,7 +21,26 @@ public interface IUserService {
      * @param: password
      * @return: com.elysia.common.pojo.common.Result<com.elysia.common.pojo.dao.ElysiaUser>
      **/
-    Result<ElysiaUser> register(String username, String password);
+    Result<ElysiaUser> register(ElysiaUser elysiaUser);
+
+    /**
+     * @description: 重置密码
+     * @author: ElysiaKafka
+     * @date: 2024/1/25 23:12
+     * @param: username
+     * @param: password
+     * @return: com.elysia.common.pojo.common.Result<com.elysia.common.pojo.dao.ElysiaUser>
+     **/
+    Result<ElysiaUser> resetPassword(String username, String password);
+
+    /**
+     * @description: 用户注销
+     * @author: ElysiaKafka
+     * @date: 2024/1/25 23:12
+     * @param: elysiaUser
+     * @return: com.elysia.common.pojo.common.Result
+     **/
+    Result deleteAccount(ElysiaUser elysiaUser);
 
     /**
      * @description: 查询用户信息
@@ -34,16 +53,6 @@ public interface IUserService {
     Result<ElysiaUserInfo> queryUserInfo(String username, String password);
 
     /**
-     * @description: 修改密码
-     * @author: ElysiaKafka
-     * @date: 2024/1/25 23:12
-     * @param: username
-     * @param: password
-     * @return: com.elysia.common.pojo.common.Result<com.elysia.common.pojo.dao.ElysiaUser>
-     **/
-    Result<ElysiaUser> resetPassword(String username, String password);
-
-    /**
      * @description: 修改用户信息
      * @author: ElysiaKafka
      * @date: 2024/1/25 23:12
@@ -53,12 +62,11 @@ public interface IUserService {
     Result<ElysiaUserInfo> updateUserInfo(ElysiaUserInfo elysiaUserInfo);
 
     /**
-     * @description: 用户注销
+     * @description: 修改用户信息
      * @author: ElysiaKafka
      * @date: 2024/1/25 23:12
-     * @param: elysiaUser
-     * @return: com.elysia.common.pojo.common.Result
+     * @param: elysiaUserInfo
+     * @return: com.elysia.common.pojo.common.Result<com.elysia.common.pojo.dao.ElysiaUserInfo>
      **/
-    Result deleteAccount(ElysiaUser elysiaUser);
-
+    Result<ElysiaUserInfo> addUserInfo(ElysiaUserInfo elysiaUserInfo);
 }

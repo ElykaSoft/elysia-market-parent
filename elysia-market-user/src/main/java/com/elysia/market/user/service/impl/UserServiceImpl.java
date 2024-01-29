@@ -5,6 +5,7 @@ import com.elysia.common.pojo.dao.ElysiaUser;
 import com.elysia.common.pojo.dao.ElysiaUserInfo;
 import com.elysia.market.api.user.IUserService;
 import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Service;
 
 /**
  * @BelongsProject: Elysia
@@ -14,11 +15,20 @@ import org.springframework.stereotype.Component;
  * @Description: TODO
  * @Version: 1.0
  */
-@Component
-//@Service
+@Service
 public class UserServiceImpl implements IUserService {
     @Override
-    public Result<ElysiaUser> register(String username, String password) {
+    public Result<ElysiaUser> register(ElysiaUser elysiaUser) {
+        return null;
+    }
+
+    @Override
+    public Result<ElysiaUser> resetPassword(String username, String password) {
+        return null;
+    }
+
+    @Override
+    public Result deleteAccount(ElysiaUser elysiaUser) {
         return null;
     }
 
@@ -28,17 +38,12 @@ public class UserServiceImpl implements IUserService {
     }
 
     @Override
-    public Result<ElysiaUser> updatePassword(String username, String password) {
-        return null;
-    }
-
-    @Override
     public Result<ElysiaUserInfo> updateUserInfo(ElysiaUserInfo elysiaUserInfo) {
         return null;
     }
 
     @Override
-    public Result deleteAccount(ElysiaUser elysiaUser) {
+    public Result<ElysiaUserInfo> addUserInfo(ElysiaUserInfo elysiaUserInfo) {
         return null;
     }
 }
