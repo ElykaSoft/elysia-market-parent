@@ -44,7 +44,7 @@ public class UserController {
             ElysiaUser elysiaUser = new ElysiaUser().builder()
                     .id(id)
                     .username(username)
-                    .password(MD5Util.)
+                    .password(password)
                     .build();
             ElysiaUserInfo elysiaUserInfo = new ElysiaUserInfo().builder()
                     .id(id)
