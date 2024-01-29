@@ -41,7 +41,7 @@ public interface IUserService {
      * @param: password
      * @return: com.elysia.common.pojo.common.Result<com.elysia.common.pojo.dao.ElysiaUser>
      **/
-    Result<ElysiaUser> updatePassword(String username, String password);
+    Result<ElysiaUser> resetPassword(String username, String password);
 
     /**
      * @description: 修改用户信息
