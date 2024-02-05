@@ -31,8 +31,6 @@ public class ExcelWriteHandler {
 
     private List<StockExcelModel> stockExcelModelList;
 
-    private static StockExcelModel tempModel;
-
     public ExcelWriteHandler(String writeFilePath, String writeWorkBookName, String writeSheetName, List<StockExcelModel> stockExcelModelList) {
         this.writeFilePath = writeFilePath;
         this.writeWorkBookName = writeWorkBookName;
@@ -59,7 +57,7 @@ public class ExcelWriteHandler {
             EasyExcel.write(file)
                     .excelType(ExcelTypeEnum.XLSX) // 指定Excel类型，默认为.xlsx
                     .head(StockExcelModel.class)
-                    .sheet("sheet1")
+                    .sheet(writeSheetName)
                     .doWrite(stockExcelModelList);
         } catch (Exception e) {
             String errorMsg = "Failed to write data into Excel file: " + ExceptionUtils.getStackTrace(e);

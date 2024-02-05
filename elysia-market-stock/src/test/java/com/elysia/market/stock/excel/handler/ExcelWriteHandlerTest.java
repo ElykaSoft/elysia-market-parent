@@ -10,7 +10,7 @@ import java.util.List;
 public class ExcelWriteHandlerTest {
     @Test
     public void testReadExcel() {
-        String readFilePath = "D:\\WeChat Files\\wxid_zs08w00uwutn21\\FileStorage\\File\\2024-01\\标包1";
+        String readFilePath = "D:\\WeChat Files\\wxid_zs08w00uwutn21\\FileStorage\\File\\2024-01\\新建文件夹\\标包1";
 //        String readWorkBookName = new String ("标包1（专用零配件）标段1-1采购意向清单");
 //        String readWorkBookName = new String ("标包1（专用零配件）标段1-2采购意向清单");
 //        String readWorkBookName = new String ("标包1（专用零配件）标段1-3采购意向清单");
@@ -25,10 +25,9 @@ public class ExcelWriteHandlerTest {
 //        String readWorkBookName = new String ("标包1（专用零配件）标段1-13采购意向清单");
 //        String readWorkBookName = new String ("标包1（专用零配件）标段1-14采购意向清单");
         String readSheetName = "Sheet1";
-        List<StockExcelModel> stockExcelModelList = new ArrayList<>();
 
         List<String> readWorkBookNameList = new ArrayList<>();
-//        readWorkBookNameList.add("标包1（专用零配件）标段1-1采购意向清单");
+        readWorkBookNameList.add("标包1（专用零配件）标段1-1采购意向清单");
         readWorkBookNameList.add("标包1（专用零配件）标段1-2采购意向清单");
         readWorkBookNameList.add("标包1（专用零配件）标段1-3采购意向清单");
         readWorkBookNameList.add("标包1（专用零配件）标段1-4采购意向清单");

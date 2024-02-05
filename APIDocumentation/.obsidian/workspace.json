@@ -39,8 +39,7 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       },
       {
         "id": "490690c053844db6",
@@ -142,7 +141,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "用户服务/用户注册.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -159,7 +157,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "用户服务/用户注册.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -181,9 +178,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "用户服务/用户注册.md"
-              }
+              "state": {}
             }
           }
         ]
@@ -203,10 +198,10 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "244ac458f405e5b2",
+  "active": "59a5b7c47ee227c2",
   "lastOpenFiles": [
-    "用户服务/用户管理.md",
     "用户服务/用户注册.md",
+    "用户服务/用户管理.md",
     "物流服务",
     "库存服务",
     "订单服务",
