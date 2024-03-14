@@ -1,6 +1,6 @@
 package com.elysia.gateway.service;
 
-import com.elysia.common.pojo.dao.ElysiaUser;
+import com.elysia.gateway.pojo.dao.ElysiaUser;
 
 import java.util.Map;
 

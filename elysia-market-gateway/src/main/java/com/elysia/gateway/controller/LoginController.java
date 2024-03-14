@@ -1,8 +1,7 @@
 package com.elysia.gateway.controller;
 
 import com.elysia.common.pojo.common.Result;
-import com.elysia.common.pojo.dao.ElysiaUser;
-import lombok.extern.slf4j.Slf4j;
+import com.elysia.gateway.pojo.dao.ElysiaUser;
 import org.springframework.cloud.context.config.annotation.RefreshScope;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -20,7 +19,6 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RequestMapping("/login")
 @RefreshScope
-@Slf4j
 public class LoginController {
     @PostMapping("/login")
     public Result<String> login(@RequestParam String username, @RequestParam String password,@RequestParam String code) {
