@@ -59,7 +59,7 @@ public class ConfigController {
             blockHandlerClass = BlockExceptionHandler.class, blockHandler = "handler2",
             fallbackClass = FallbackExceptionHandler.class, fallback = "handler2",
             exceptionsToIgnore = {NullPointerException.class})
-    public Result<String> getOrderInfo2(String orderId) {
+    public Result<String> getOrderInfo2(String orderId) throws Exception {
         if (StringUtils.equals(orderId, "123")) {
             throw new NullPointerException("空空空空空空空空空空");
         }

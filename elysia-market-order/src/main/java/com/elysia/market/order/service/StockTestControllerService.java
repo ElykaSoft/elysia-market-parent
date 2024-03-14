@@ -16,7 +16,7 @@ import org.springframework.web.bind.annotation.PathVariable;
  * @Version: 1.0
  */
 @Service
-@FeignClient(value = "elysia-market-stock-service", fallback = StockTestControllerServiceImpl.class)
+@FeignClient(value = "elysia-market-stock-service", fallback = StockTestControllerServiceImpl.class)// 使用Feign客户端调用远程服务的注解
 public interface StockTestControllerService {
     @GetMapping("/stock/reduce/{orderId}")
     public Result<String> reduceStock(@PathVariable("orderId") String orderId);
